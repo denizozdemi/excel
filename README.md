@@ -15,22 +15,22 @@ Javascript kullanarak oluşturdugunuz tabloları Excel dosyasına aktarmak olduk
 
 3. JavaScript Kodunun Eklenmesi: Projenizde excel.js dosyasını dahil ettikten sonra, aşağıdaki JavaScript kodunu sayfanın en altına yerleştirin. Bu kod, belirttiğiniz tabloyu Excel dosyasına aktarmak için kullanılır:
 
-      document.getElementById('download').addEventListener('click', function () {
-          var table = document.getElementById('myTable');    
-          var rows = table.querySelectorAll('tr');
-          rows.forEach(row => {
-              var cells = row.querySelectorAll('td, th');
-              cells.forEach(cell => {
-                  var cellText = cell.innerText;
-                  var date = new Date(cellText);            
-                  if (!isNaN(date.getTime())) {
-                      cell.innerText = date.toISOString().split('T')[0];
-                  }
-              });
-          });
-          var wb = XLSX.utils.table_to_book(table, {sheet: "Sheet1"});
-          XLSX.writeFile(wb, 'tablo.xlsx');
-      });
+         document.getElementById('download').addEventListener('click', function () {
+             var table = document.getElementById('myTable');    
+             var rows = table.querySelectorAll('tr');
+             rows.forEach(row => {
+                 var cells = row.querySelectorAll('td, th');
+                 cells.forEach(cell => {
+                     var cellText = cell.innerText;
+                     var date = new Date(cellText);            
+                     if (!isNaN(date.getTime())) {
+                         cell.innerText = date.toISOString().split('T')[0];
+                     }
+                 });
+             });
+             var wb = XLSX.utils.table_to_book(table, {sheet: "Sheet1"});
+             XLSX.writeFile(wb, 'tablo.xlsx');
+         });
 
 
 4. Tablonun Belirtilmesi: Excel'e aktarmak istediğiniz verilerin bulunduğu tabloyu, id özelliği ile belirtebilirsiniz. Örneğin, Excel'e aktarılacak tabloyu aşağıdaki şekilde belirtmişsiniz:
