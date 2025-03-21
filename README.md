@@ -26,8 +26,7 @@ Javascript kullanarak tabloları Excel dosyasına aktarmak oldukça basitleşmi�
         <table border="1" style="margin-top:20px;" id="myTable">
 
 
-## Not:
-
+ Not:
     Bu JavaScript kodu yalnızca görünür olan sayfadaki ilk tablonun verilerini alacaktır. Eğer sayfada çok fazla veri varsa ve farklı sayfalara geçiş yapmanız gerekiyorsa, yalnızca şu an görünen sayfa aktarılacaktır. Yani, yalnızca ekranın ilk bölümündeki veriler Excel'e aktarılacaktır.
 
 
