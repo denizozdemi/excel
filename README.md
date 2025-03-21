@@ -1,11 +1,11 @@
 ## Excel'e Veri Aktarma Yöntemi
 
-Javascript kullanarak tabloları Excel dosyasına aktarmak oldukça basitleşmiştir. Bu yöntem sayesinde gereksiz kod kullanımını önleyebilir ve daha düzenli bir sayfa deneyimi sunabilirsiniz.
+Javascript kullanarak oluşturdugunuz tabloları Excel dosyasına aktarmak oldukça basitleşmiştir. Bu yöntem sayesinde gereksiz kod kullanımını önleyebilir ve daha düzenli bir sayfa deneyimi sunabilirsiniz.
 
 ### Kullanım Adımları:
 
 1. **Excel.js Dosyasının Dahil Edilmesi:**
-   İlk olarak, projenize **excel.js** dosyasını dahil etmeniz gerekmektedir. Bunun için aşağıdaki `<script>` etiketi ile dosyayı projenize dahil edin:
+   İlk olarak, projenize **excel.js** dosyasını dahil etmeniz gerekmektedir. Projenize dahil ettikten donra bunun için aşağıdaki `<script>` etiketi ile projenize dahil ettiğiniz **excel.js** dosyayı projeniz de çagrınız:
    ```html
    <script src="js/excel.js"></script>
 
@@ -27,6 +27,6 @@ Javascript kullanarak tabloları Excel dosyasına aktarmak oldukça basitleşmi�
 
 
  Not:
-    Bu JavaScript kodu yalnızca görünür olan sayfadaki ilk tablonun verilerini alacaktır. Eğer sayfada çok fazla veri varsa ve farklı sayfalara geçiş yapmanız gerekiyorsa, yalnızca şu an görünen sayfa aktarılacaktır. Yani, yalnızca ekranın ilk bölümündeki veriler Excel'e aktarılacaktır.
+    Bu JavaScript kodu yalnızca görünür olan sayfadaki ilk tablonun verilerini alacaktır. Eğer sayfada çok fazla veri varsa ve farklı sayfalara geçiş yapmanız gerekiyorsa, yalnızca şu an görünen sayfa aktarılacaktır. Yani, yalnızca ekranın ilk bölümündeki veriler Excel'e aktarılacaktır örnegin tablonuzda sayfalama varsa 1 2 vb gibi sadece 1 sayfada ki veriyi excel e aktaracaktır..
 
 
