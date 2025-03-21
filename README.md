@@ -10,7 +10,7 @@ Javascript kullanarak tabloları Excel dosyasına aktarmak oldukça basitleşmi�
    <script src="js/excel.js"></script>
 
 2. Excel Butonunun Oluşturulması: Excel dosyasına veri aktarmak için bir buton oluşturmalısınız. Butonun HTML kodu şu şekilde olabilir:
-
+    ```html
     <button id="download" name="kulla">Excel Olarak İndir</button>
 
 3. JavaScript Kodunun Eklenmesi: Projenizde excel.js dosyasını dahil ettikten sonra, aşağıdaki JavaScript kodunu sayfanın en altına yerleştirin. Bu kod, belirttiğiniz tabloyu Excel dosyasına aktarmak için kullanılır:
